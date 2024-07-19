@@ -41,6 +41,15 @@ dependencies:
   react-dom:
     specifier: ^18
     version: 18.3.1(react@18.3.1)
+  react-icon-cloud:
+    specifier: ^4.1.4
+    version: 4.1.4(react@18.3.1)
+  react-icons:
+    specifier: ^5.2.1
+    version: 5.2.1(react@18.3.1)
+  react-intersection-observer:
+    specifier: ^9.13.0
+    version: 9.13.0(react-dom@18.3.1)(react@18.3.1)
   tailwind-merge:
     specifier: ^2.4.0
     version: 2.4.0
@@ -79,6 +88,11 @@ packages:
   /@alloc/quick-lru@5.2.0:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
+
+  /@csstools/convert-colors@2.0.0:
+    resolution: {integrity: sha512-P7BVvddsP2Wl5v3drJ3ArzpdfXMqoZ/oHOV/yFiGFb3JQr9Z9UXZ9tnHAKJsO89lfprR1F9ExW3Yij21EjEBIA==}
+    engines: {node: '>=6.0.0'}
+    dev: false
 
   /@eslint-community/eslint-utils@4.4.0(eslint@8.57.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
@@ -2858,6 +2872,37 @@ packages:
       loose-envify: 1.4.0
       react: 18.3.1
       scheduler: 0.23.2
+    dev: false
+
+  /react-icon-cloud@4.1.4(react@18.3.1):
+    resolution: {integrity: sha512-hc8yGNU98V6ObPdeNIt75M016xGMxbTWqB4l6exo1uwE5bvFU095unMbX2K3YBKYhGKEV3c7fSmq3jD3cRWX+A==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      '@csstools/convert-colors': 2.0.0
+      react: 18.3.1
+    dev: false
+
+  /react-icons@5.2.1(react@18.3.1):
+    resolution: {integrity: sha512-zdbW5GstTzXaVKvGSyTaBalt7HSfuK5ovrzlpyiWHAFXndXTdd/1hdDHI4xBM1Mn7YriT6aqESucFl9kEXzrdw==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.3.1
+    dev: false
+
+  /react-intersection-observer@9.13.0(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-y0UvBfjDiXqC8h0EWccyaj4dVBWMxgEx0t5RGNzQsvkfvZwugnKwxpu70StY4ivzYuMajavwUDjH4LJyIki9Lw==}
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
     dev: false
 
   /react-is@16.13.1:

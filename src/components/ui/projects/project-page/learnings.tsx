@@ -20,7 +20,7 @@ type Props = {
 
 function Learnings({ sectionHeading, title, array }: Props) {
     return (
-        <div className="flex flex-row gap-8 p-20" id="data-privacy">
+        <div className="flex flex-row gap-8 p-20" id="learnings">
             <SectionHeading>{sectionHeading}</SectionHeading>
             <div className="flex flex-col gap-12 w-full">
                 <Title>{title}</Title>

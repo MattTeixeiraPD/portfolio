@@ -17,7 +17,7 @@ type Props = {
 }
 function IdeatingSolutions({ sectionHeading, title, body1, image1, body2, image2, body3 }: Props) {
     return (
-        <div className="flex flex-row gap-8 p-20" id="problem-statement">
+        <div className="flex flex-row gap-8 p-20" id="ideating-solutions">
             <SectionHeading>{sectionHeading}</SectionHeading>
             <div className="flex flex-col gap-8 items-start w-full">
                 <Title>{title}</Title>

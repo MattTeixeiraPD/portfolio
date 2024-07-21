@@ -21,7 +21,7 @@ type Props = {
 
 function SolutionComponent({ sectionHeading, title, solution1, solution2 }: Props) {
     return (
-        <div className="flex flex-row gap-8 p-20" id="overview">
+        <div className="flex flex-row gap-8 p-20" id="solution">
             <SectionHeading>{sectionHeading}</SectionHeading>
             <div className="flex flex-col gap-4 items-start w-full">
                 <Title>{title}</Title>

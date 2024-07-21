@@ -8,7 +8,7 @@ type Props = {
 export default function ImpactComponent({ copy }: Props) {
     const numbers = ["01", "02", "03"]
     return (
-        <div className="w-full py-20 m-auto bg-gray-200 dark:bg-gray-800" id="impact">
+        <div className="w-full py-20 m-auto bg-zinc-200 dark:bg-zinc-700" id="impact">
             <div className="w-full flex flex-row justify-center items-start px-20">
                 <ImpactHeading />
                 <div className="w-full flex flex-col justify-center items-start gap-5">

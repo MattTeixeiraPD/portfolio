@@ -24,6 +24,10 @@ function withRevealOnScroll<T extends React.ComponentType<any>>(Component: T) {
                     hidden: { opacity: 0, y: 50 },
                     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
                 }}
+                style={{
+                    width: "100%",
+                    height: "100%",
+                }}
             >
                 <Component {...props} />
             </motion.div>

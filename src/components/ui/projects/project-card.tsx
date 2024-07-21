@@ -1,9 +1,12 @@
-
-import Image from "next/image";
+'use client';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 import projects from "@/lib/projects";
 import { Dot, Info, Goal } from "lucide-react";
 import { Fragment } from "react";
 import Link from "next/link";
+import CoverImage from "../cover-image";
 
 type Props = {
     projectName: string;
@@ -15,39 +18,59 @@ type Props = {
 }
 
 const ProjectCard = ({ projectName, valueProp1, valueProp2, image, tags, href }: Props) => {
+    const controls = useAnimation();
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.2,
+    });
+
+    useEffect(() => {
+        if (inView) {
+            controls.start({ scale: 1 });
+        } else {
+            controls.start({ scale: 0.4 });
+        }
+    }, [controls, inView]);
+
     return (
-        <Link href={href} className="w-full px-20">
-            <div
-                className="w-full h-fit hover:bg-black/5 dark:hover:bg-white/5 border-y-2 border-t-gray-200 dark:border-t-gray-800 flex flex-col md:flex-row gap-10 md:gap-5 justify-between p-4 transition-transform duration-300">
-                <div className="flex flex-col justify-between items-start w-3/5">
-                    <div className="flex flex-col gap-12">
-                        <h2 className="text-2xl md:text-3xl font-bold">{projectName}</h2>
-                        <div className="flex flex-col gap-4">
-                            <span className="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-md"><Info className="mr-1 text-gray-500 dark:text-gray-500" />{valueProp1}</span>
-                            <span className="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-md"><Goal className="mr-1 text-gray-500 dark:text-gray-500" />{valueProp2}</span>
+        <motion.div
+            ref={ref}
+            initial={{ scale: 0.1 }}
+            animate={controls}
+            transition={{ duration: 0.2 }}
+            className="w-full h-full md:h-[500px]"
+            >
+            <Link href={href} className="w-full h-full px-20">
+                <div
+                    className="bg-zinc-100 dark:bg-zinc-700 w-full rounded-3xl border border-zinc-200 dark:border-zinc-600 flex flex-col lg:flex-row gap-10 md:gap-5 justify-between transition-transform duration-300 shadow-lg shadow-zinc-800 dark:shadow-zinc-200/20 dark:hover:shadow-2xl hover:scale-105 h-full"
+                >
+                    <CoverImage src={image} width={1200} height={630} title={projectName} />
+                    <div className="flex flex-col gap-16 md:justify-between items-start p-4 md:py-8 md:pr-8 w-full">
+                        <div className="flex flex-col gap-12 w-full">
+                            <h2 className="text-2xl md:text-4xl font-medium3 w-full">{projectName}</h2>
+                            <div className="flex flex-col gap-4 w-full">
+                                <span className="flex items-center gap-2 text-gray-500 dark:text-gray-300 text-base md:text-lg"><Info className="mr-1 text-gray-500 dark:text-gray-300" />{valueProp1}</span>
+                                <span className="flex items-center gap-2 text-gray-500 dark:text-gray-300 text-base md:text-lg"><Goal className="mr-1 text-gray-500 dark:text-gray-300" />{valueProp2}</span>
+                            </div>
+                        </div>
+                        <div className="flex gap-2 flex-wrap w-full">
+                            {tags.map((tag, index) => (
+                                <Fragment key={tag}>
+                                    <span className="text-gray-400 dark:text-gray-400">{tag}</span>
+                                    {index < tags.length - 1 && <Dot className="text-gray-400 dark:text-gray-400" />}
+                                </Fragment>
+                            ))}
                         </div>
                     </div>
-                    <div className="flex gap-2 flex-wrap">
-                        {tags.map((tag, index) => (
-                            <Fragment key={tag}>
-                                <span className="text-gray-400 dark:text-gray-500">{tag}</span>
-                                {index < tags.length - 1 && <Dot className="text-gray-400 dark:text-gray-600" />}
-                            </Fragment>
-                        ))}
-                    </div>
                 </div>
-                <div className="w-full h-full relative">
-                    <Image src={image} alt={projectName} width={4800} height={2800} />
-                </div>
-            </div>
-        </Link>
+            </Link>
+        </motion.div>
     );
 };
 
 const ProjectCardWrapper = () => {
-
     return (
-        <div className="flex flex-col gap-4 w-full items-center justify-center">
+        <div className="flex flex-col gap-12 w-full items-center justify-center px-4 lg:px-20">
             {projects.map((project) => (
                 <ProjectCard
                     {...project}

@@ -3,7 +3,7 @@ const ImpactHeading = () => {
 };
 
 const SectionHeading = ({ children }: { children: React.ReactNode }) => {
-    return <h2 className="text-xl font-normal w-60 text-gray-400 dark:text-gray-500">{children}</h2>
+    return <h2 className="text-xl font-normal w-48 text-gray-500 dark:text-gray-500">{children}</h2>
 };
 
 const Title = ({ children }: { children: React.ReactNode }) => {
@@ -11,7 +11,7 @@ const Title = ({ children }: { children: React.ReactNode }) => {
 };
 
 const Body = ({ children, className }: { children: React.ReactNode, className?: string }) => {
-    return <p className={`text-lg font-normal leading-loose ${className}`}>{children}</p>;
+    return <p className={`text-[20px] font-normal leading-loose ${className}`}>{children}</p>;
 };
 
 export { ImpactHeading, SectionHeading, Title, Body };

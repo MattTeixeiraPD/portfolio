@@ -18,7 +18,7 @@ import Learnings from "@/components/ui/projects/project-page/learnings";
 import NextSteps from "@/components/ui/projects/project-page/next-steps"
 import { NavigationProvider } from "@/context/NavigationContext";
 import NavigateButton from "@/hooks/useNavigation";
-
+import { ImageOverlayProvider } from "@/context/ImageOverlayContext";
 export const metadata: Metadata = {
     title: "Charity Partnerships Dashboards",
 };

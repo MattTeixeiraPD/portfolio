@@ -12,6 +12,7 @@ import {
     NavigationMenuTrigger,
 } from "@/components/ui/navbar/navigation-menu-primitives"
 import { ModeToggle } from "@/components/theme/switcher"
+import { useImageOverlay } from "@/context/ImageOverlayContext";
 
 const components: { title: string; href: string; description: string }[] = [
     {
@@ -32,44 +33,49 @@ const components: { title: string; href: string; description: string }[] = [
 ]
 
 export function NavigationMenuDemo() {
+    const { isOpen } = useImageOverlay();
     return (
-        <div className="flex items-center justify-center w-full py-4" id="navbar">
-            <NavigationMenu>
-                <NavigationMenuList>
-                    <NavigationMenuItem>
-                        <Link href="/" className="text-md hover:bg-zinc-200 dark:hover:bg-zinc-800 rounded-md py-2 px-4">
-                            Home
-                        </Link>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] ">
-                                {components.map((component) => (
-                                    <ListItem
-                                        key={component.title}
-                                        title={component.title}
-                                        href={component.href}
-                                        className="text-md"
-                                    >
-                                        {component.description}
-                                    </ListItem>
-                                ))}
-                            </ul>
-                        </NavigationMenuContent>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <Link href="/about" className="text-md hover:bg-zinc-200 dark:hover:bg-zinc-800 rounded-md py-2 px-4">
-                            About Me
-                        </Link>
-                    </NavigationMenuItem>
-                </NavigationMenuList>
-            </NavigationMenu>
-            {/* Fixed positioning for Mode Toggle */}
-            <div className="absolute right-0 top-0 my-2 mx-1">
-                <ModeToggle />
+        isOpen ? (
+            <div className="w-full py-4 z-40 hidden" id="navbar"></div>
+        ) : (
+            <div className="flex items-center justify-center w-full py-4 z-40" id="navbar">
+                <NavigationMenu>
+                    <NavigationMenuList>
+                        <NavigationMenuItem>
+                            <Link href="/" className="text-md hover:bg-zinc-200 dark:hover:bg-zinc-800 rounded-md py-2 px-4">
+                                Home
+                            </Link>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+                            <NavigationMenuContent>
+                                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px]">
+                                    {components.map((component) => (
+                                        <ListItem
+                                            key={component.title}
+                                            title={component.title}
+                                            href={component.href}
+                                            className="text-md"
+                                        >
+                                            {component.description}
+                                        </ListItem>
+                                    ))}
+                                </ul>
+                            </NavigationMenuContent>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <Link href="/about" className="text-md hover:bg-zinc-200 dark:hover:bg-zinc-800 rounded-md py-2 px-4">
+                                About Me
+                            </Link>
+                        </NavigationMenuItem>
+                    </NavigationMenuList>
+                </NavigationMenu>
+                {/* Fixed positioning for Mode Toggle */}
+                <div className="absolute right-0 top-0 my-2 mx-1">
+                    <ModeToggle />
+                </div>
             </div>
-        </div>
+        )
     )
 }
 

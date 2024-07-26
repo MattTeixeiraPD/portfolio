@@ -1,6 +1,8 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
+import { useImageOverlay } from "@/context/ImageOverlayContext";
+
 type ImageOverlayProps = {
     src: string;
     alt: string;
@@ -9,7 +11,7 @@ type ImageOverlayProps = {
 };
 
 export default function ImageOverlay({ src, alt, width, height }: ImageOverlayProps) {
-    const [isOpen, setIsOpen] = useState(false);
+    const { isOpen, setIsOpen } = useImageOverlay();
 
     const handleOpen = () => setIsOpen(true);
     const handleClose = () => setIsOpen(false);
@@ -38,7 +40,7 @@ export default function ImageOverlay({ src, alt, width, height }: ImageOverlayPr
         <>
             <Image src={src} alt={alt} width={width} height={height} onClick={handleOpen} className="cursor-pointer" />
             {isOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-zinc-800 min-h-screen min-w-screen transition-opacity duration-1000 ease-in-out opacity-100" onClick={handleClose}>
+                <div className="fixed inset-0 flex items-center justify-center bg-zinc-800 min-h-screen min-w-screen transition-opacity duration-1000 ease-in-out opacity-100 z-50" onClick={handleClose}>
                     <div style={{ position: "relative", width: "100vw", height: "100vh", margin: "40px" }}>
                         <Image
                             src={src}

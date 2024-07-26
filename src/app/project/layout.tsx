@@ -6,6 +6,7 @@ import { NavigationMenuDemo } from "@/components/ui/navbar/navbar";
 import Footer from "@/components/ui/footer.tsx/footer";
 import BackToTop from "@/components/ui/back-to-top";
 import { Analytics } from "@vercel/analytics/react"
+import { ImageOverlayProvider } from "@/context/ImageOverlayContext";
 
 const font = Assistant({ subsets: ["latin"] });
 
@@ -27,11 +28,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NavigationMenuDemo />
-          {children}
-          <BackToTop />
-          <Footer />
-          <Analytics />
+          <ImageOverlayProvider>
+            <NavigationMenuDemo />
+            {children}
+            <BackToTop />
+            <Footer />
+            <Analytics />
+          </ImageOverlayProvider>
         </ThemeProvider>
       </body>
     </html >

@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme/theme-provider"
 import { NavigationMenuDemo } from "@/components/ui/navbar/navbar";
 import Footer from "@/components/ui/footer.tsx/footer";
 import { Analytics } from "@vercel/analytics/react"
+import { ImageOverlayProvider } from "@/context/ImageOverlayContext";
 
 const font = Assistant({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
@@ -26,7 +27,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NavigationMenuDemo />
+          <ImageOverlayProvider>
+            <NavigationMenuDemo />
+          </ImageOverlayProvider>
           {children}
           <Footer />
           <Analytics />

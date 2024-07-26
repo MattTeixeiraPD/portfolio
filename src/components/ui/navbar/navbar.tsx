@@ -33,7 +33,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuDemo() {
     return (
-        <div className="flex items-center justify-center w-full py-4 z-50" id="navbar">
+        <div className="flex items-center justify-center w-full py-4" id="navbar">
             <NavigationMenu>
                 <NavigationMenuList>
                     <NavigationMenuItem>

@@ -30,7 +30,7 @@ const theAustralian = {
         body1: "A result of that 'steam loss' is due to the lack of user-specific content recommendations, which can be solved by adopting machine learning algorithms or writing very complicated logic manually.",
         body2: "Our goal was to bridge this gap by understanding what was important for charities when wanting to have relationships with their bequestors and analysing a marketing campaign.",
         body3: "That's a lot of investment. How can we validate and provide good reasons as to why this investment should be made? A smaller initiative accomplishing the same goal is the best way to do that.",
-        image: "/partnerships/problem.png"
+        image: "/the-australian/problem.svg",
     },
     solution: {
         sectionHeading: "Solution",
@@ -38,7 +38,7 @@ const theAustralian = {
         solution1: {
             heading: "Use simple third party algorithms to validate the need for content personalisation",
             body: "Content personalisation is a complex topic. It is not something that can be done with a simple algorithm. It requires a lot of data and a lot of expertise. We needed to understand if we could get good results with a smaller solution to then scale up to a program",
-            image: "/partnerships/solution-1.png"
+            image: "/the-australian/solution.svg"
         }
     },
     learnings: {

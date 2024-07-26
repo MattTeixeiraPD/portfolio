@@ -59,7 +59,7 @@ const vault = {
         subTitle: "Competitive Audit",
         goals: {
             title: "Goals",
-            goals: ["/the-vault/ca-goal-1.png", "/the-vault/ca-goal-2.png", "/the-vault/ca-goal-3.png", "/the-vault/ca-goal-4.png", "/the-vault/ca-goal-5.png"],
+            goals: ["How competitors structure their information", "How much guidance competitors provide to the user", "User-to-Executor handover", "Pricing structures"],
         },
         image: "/the-vault/competitive-audit.png",
         findings: {

@@ -38,7 +38,7 @@ export default function ImageOverlay({ src, alt, width, height }: ImageOverlayPr
         <>
             <Image src={src} alt={alt} width={width} height={height} onClick={handleOpen} className="cursor-pointer" />
             {isOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 min-h-screen min-w-screen transition-opacity duration-1000 ease-in-out opacity-100" onClick={handleClose}>
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-zinc-800 min-h-screen min-w-screen transition-opacity duration-1000 ease-in-out opacity-100" onClick={handleClose}>
                     <div style={{ position: "relative", width: "100vw", height: "100vh", margin: "40px" }}>
                         <Image
                             src={src}

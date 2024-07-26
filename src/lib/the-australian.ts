@@ -28,8 +28,7 @@ const theAustralian = {
         sectionHeading: "Problem",
         title: "Media applications are losing steam to other applications for many reasons. One of these reasons is due to the ultra-personalisation of apps such as X, YouTube, TikTok, Instagram, and others",
         body1: "A result of that 'steam loss' is due to the lack of user-specific content recommendations, which can be solved by adopting machine learning algorithms or writing very complicated logic manually.",
-        body2: "Our goal was to bridge this gap by understanding what was important for charities when wanting to have relationships with their bequestors and analysing a marketing campaign.",
-        body3: "That's a lot of investment. How can we validate and provide good reasons as to why this investment should be made? A smaller initiative accomplishing the same goal is the best way to do that.",
+        body2: "That's a lot of investment. How can we validate and provide good reasons as to why this investment should be made? A smaller initiative accomplishing the same goal is the best way to do that.",
         image: "/the-australian/problem.svg",
     },
     solution: {

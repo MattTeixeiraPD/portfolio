@@ -37,7 +37,6 @@ export default function TheAustralianPage() {
                     title={theAustralian.problem.title}
                     body1={theAustralian.problem.body1}
                     body2={theAustralian.problem.body2}
-                    body3={theAustralian.problem.body3}
                     image={theAustralian.problem.image}
                 />
                 <Divider />

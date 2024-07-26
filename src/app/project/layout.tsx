@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme/theme-provider"
 import { NavigationMenuDemo } from "@/components/ui/navbar/navbar";
 import Footer from "@/components/ui/footer.tsx/footer";
 import BackToTop from "@/components/ui/back-to-top";
+import { Analytics } from "@vercel/analytics/react"
 
 const font = Assistant({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
           {children}
           <BackToTop />
           <Footer />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html >

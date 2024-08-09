@@ -8,16 +8,22 @@ import { Gap1REM } from "../../spacing";
 type Props = {
     sectionHeading: string,
     title: string,
-    body1: string;
-    body2: string,
-    subTitle1: string,
-    body3: string,
-    body4: string,
-    image1: string,
-    image2: string,
-    subTitle2: string,
-    body5: string,
-    image3: string,
+    body1?: string;
+    body2?: string,
+    subTitle1?: string,
+    body3?: string,
+    body4?: string,
+    image1?: {
+        light: string,
+        dark: string
+    },
+    image2?: {
+        light: string,
+        dark: string
+    },
+    subTitle2?: string,
+    body5?: string,
+    image3?: string,
 }
 
 function InitialThinkingComponent({ sectionHeading, title, body1, subTitle1, body2, body3, body4, image1, image2, subTitle2, body5, image3 }: Props) {
@@ -26,18 +32,35 @@ function InitialThinkingComponent({ sectionHeading, title, body1, subTitle1, bod
             <SectionHeading>{sectionHeading}</SectionHeading>
             <div className="flex flex-col gap-8 items-start w-full">
                 <Title>{title}</Title>
-                <Body>{body1}</Body>
-                <Body>{body2}</Body>
+                {body1 && <Body>{body1}</Body>}
+                {body2 && <Body>{body2}</Body>}
                 <Gap1REM />
-                <h3 className="text-2xl font-bold">{subTitle1}</h3>
-                <Body>{body3}</Body>
-                <Body>{body4}</Body>
-                <ImageOverlay src={image1} alt={title} width={800} height={400} />
-                <ImageOverlay src={image2} alt={title} width={800} height={400} />
-                <Gap1REM />
-                <h3 className="text-2xl font-bold">{subTitle2}</h3>
-                <Body>{body5}</Body>
-                <ImageOverlay src={image3} alt={title} width={800} height={400} />
+                {subTitle1 && <h3 className="text-2xl font-bold">{subTitle1}</h3>}  
+                {body3 && <Body>{body3}</Body>}
+                {body4 && <Body>{body4}</Body>}
+                {image1 &&
+                    <>
+                        <div className="block dark:hidden">
+                            <ImageOverlay src={image1.light} alt={title} width={800} height={400} />
+                        </div>
+                        <div className="hidden dark:block">
+                            <ImageOverlay src={image1.dark} alt={title} width={800} height={400} />
+                        </div>
+                    </>
+                }
+                {image2 &&
+                    <>
+                        <div className="block dark:hidden">
+                            <ImageOverlay src={image2.light} alt={title} width={800} height={400} />
+                        </div>
+                        <div className="hidden dark:block">
+                            <ImageOverlay src={image2.dark} alt={title} width={800} height={400} />
+                        </div>
+                    </>
+                }                <Gap1REM />
+                {subTitle2 && <h3 className="text-2xl font-bold">{subTitle2}</h3>}
+                {body5 && <Body>{body5}</Body>}
+                {image3 && <ImageOverlay src={image3} alt={title} width={800} height={400} />}
             </div>
         </div>
     );

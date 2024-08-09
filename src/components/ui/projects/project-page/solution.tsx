@@ -16,10 +16,16 @@ type Props = {
         heading: string;
         body: string;
         image: string;
+    },
+    solution3?: {
+        heading: string;
+        body: string;
+        image: string;
     }
+
 }
 
-function SolutionComponent({ sectionHeading, title, solution1, solution2 }: Props) {
+function SolutionComponent({ sectionHeading, title, solution1, solution2, solution3 }: Props) {
     return (
         <div className="flex flex-row gap-8 p-20" id="solution">
             <SectionHeading>{sectionHeading}</SectionHeading>
@@ -32,14 +38,24 @@ function SolutionComponent({ sectionHeading, title, solution1, solution2 }: Prop
                     </div>
                     <ImageOverlay src={solution1.image} alt={solution1.heading} width={600} height={600} />
                 </div>
-                {solution2 && <div className="flex flex-row gap-4 items-center justify-center">
-                    <ImageOverlay src={solution2.image} alt={solution2.heading} width={600} height={600} />
-                    <div className="flex flex-col gap-4">
-                        <h3 className="text-2xl font-bold">{solution2.heading}</h3>
-                        <Body>{solution2.body}</Body>
+                {solution2 &&
+                    <div className="flex flex-row gap-4 items-center justify-center">
+                        <ImageOverlay src={solution2.image} alt={solution2.heading} width={600} height={600} />
+                        <div className="flex flex-col gap-4">
+                            <h3 className="text-2xl font-bold">{solution2.heading}</h3>
+                            <Body>{solution2.body}</Body>
+                        </div>
                     </div>
-                </div>
                 }
+                {solution3 &&
+                    <div className="flex flex-row gap-4 items-center justify-center">
+                        <div className="flex flex-col gap-4">
+                            <h3 className="text-2xl font-bold">{solution3.heading}</h3>
+                            <Body>{solution3.body}</Body>
+                        </div>
+                        <ImageOverlay src={solution3.image} alt={solution3.heading} width={600} height={600} />
+
+                    </div>}
             </div>
         </div>
     );

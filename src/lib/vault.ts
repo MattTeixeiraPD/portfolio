@@ -35,7 +35,10 @@ const vault = {
         sectionHeading: "Problem",
         title: "People are not prepared for the end of their life, and only a Will isn't enough anymore.",
         body1: "When a person passes away, their Executor:",
-        image: "/the-vault/executor.png",
+        image: {
+            light: "/the-vault/executor.png",
+            dark: "/the-vault/executor.png"
+        },
         body2: "Not only dealing with someone’s death and matters is quite exhausting, but very often, the Executor is grieving while doing it. That is an extreme load on anyone."
     },
     solution: {
@@ -66,9 +69,18 @@ const vault = {
             title: "Findings from User Interviews",
             body: "After the competitive analysis and 5 user interviews that covered both The Vault and another product we were scoping out the MVP for (similar to The Vault, therefore we could use a script for both and learn for both products at the same time), we understood what was really important to be on the MVP. It's easy to put a bunch of features that could solve the problem based on our research, but our intention was to trim down the product to its essence, focus on solving only what really matters (and what will make the ser love the product) first.",
             body2: "We really wanted to go lean.",
-            image1: "/the-vault/research-finding-1.png",
-            image2: "/the-vault/research-finding-2.png",
-            image3: "/the-vault/research-finding-3.png"
+            image1: {
+                light: ["/the-vault/research-finding-1.png"],
+                dark: ["/the-vault/research-finding-1.png"]
+            },
+            image2: {
+                light: ["/the-vault/research-finding-2.png"],
+                dark: ["/the-vault/research-finding-2.png"]
+            },
+            image3: {
+                light: ["/the-vault/research-finding-3.png"],
+                dark: ["/the-vault/research-finding-3.png"]
+            }
         }
     },
     ideatingSolutions: {

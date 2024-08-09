@@ -13,7 +13,7 @@ export default function CoverImage({
     height: number;
 }) {
 return (
-        <div className="relative p-4 flex items-center justify-center w-full">
+        <div className="relative flex items-center justify-center w-full">
             <Image src={src} alt={title} width={width} height={height} />
         </div>
     );

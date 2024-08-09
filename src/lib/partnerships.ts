@@ -41,7 +41,10 @@ const partnerships = {
         title: "Charities want to better allocate their resources and nurture relationships with their bequestors",
         body1: "Charities often face challenges in visualising and analysing bequests, understanding their campaign performance, and gaining insights into their user demographics. Without adequate tools, they struggled to optimise their fundraising efforts and efficiently allocate resources.",
         body2: "Our goal was to bridge this gap by understanding what was important for charities when wanting to have relationships with their bequestors and analysing a marketing campaign.",
-        image: "/partnerships/problem.png"
+        image: {
+            light: "/partnerships/problem.png",
+            dark: "/partnerships/problem.png"
+        }
     },
     solution: {
         sectionHeading: "Solution",
@@ -65,8 +68,14 @@ const partnerships = {
         subTitle1: "Assumptions",
         body3: "We began the project with a set of assumptions, including the belief that charities would greatly benefit from having access to real-time data and actionable insights.",
         body4: "We assumed that by streamlining data collection and visualisation, we could empower charities to optimise their campaigns, identify trends, and better understand their bequestor base. However, we recognised the need to validate these assumptions through user research and testing.",
-        image1: "/partnerships/assumption-1.png",
-        image2: "/partnerships/assumption-2.png",
+        image1: {
+            light: "/partnerships/assumption-1.png",
+            dark: "/partnerships/assumption-1.png"
+        },
+        image2: {
+            light: "/partnerships/assumption-2.png",
+            dark: "/partnerships/assumption-2.png"
+        },
         subTitle2: "Hypothesis",
         body5: "Our hypothesis was that by providing charities with a user-friendly dashboard that offers intuitive data visualisation, advanced analytics, and demographic insights, we could empower them to enhance their fundraising efforts, drive greater engagement, and make data-driven decisions for more effective resource allocation.",
         image3: "/partnerships/hypothesis.png",
@@ -94,7 +103,10 @@ const partnerships = {
             subSubTitle1: {
                 title: "The goal with these meetings was to:",
                 goals: ["Correlate pain points found with users to insights sales and CS teams had noted", "List out feature requests and the reasons as to why the customer wanted/needed these features", "Understand their sales strategy going into the next 12-18 months and how it related back to company vision to then translate that vision into the next iteration"],
-                image: "/partnerships/sales-insights.png",
+                image: {
+                    light: "/partnerships/sales-insights.png",
+                    dark: "/partnerships/sales-insights.png"
+                },
             },
         },
         subTitle2: {

@@ -12,7 +12,7 @@ import { NavigationProvider } from "@/context/NavigationContext";
 import NavigateButton from "@/hooks/useNavigation";
 
 export const metadata: Metadata = {
-    title: "The Australian",
+    title: "The Australian | Projects | Matt Teixeira",
 };
 
 const ids = [

@@ -1,5 +1,14 @@
 const projects = [
     {
+        projectName: "CapitalClimb | The Ultimate Stock Research Tool",
+        valueProp1: "My own SaaS helping individual investors to visualise and analyse stock financials, track prices, add notes, and filter based on financial metrics",
+        valueProp2: "20% DAU/MAU achieved within 30 days",
+        image: "/capitalclimb/solution-1.svg",
+        tags: ["Coding", "Product Strategy", "Branding", "End-to-End"],
+        href: "/project/capitalclimb",
+        id: "capitalclimb"
+    },
+    {
         projectName: "Digital Vault | Making your Executor's Life Easier",
         valueProp1: "Encrypted Digital Vault's MVP from concept to implementation",
         valueProp2: "30% WAU/MAU achieved in 4 weeks and exceeded acquisition OKR by 100%",

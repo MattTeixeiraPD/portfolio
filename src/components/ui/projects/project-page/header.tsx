@@ -5,7 +5,7 @@ import { Body } from "@/components/typography/typography";
 
 type HeaderItem = {
     heading: string;
-    body: string | { copy1: string; copy2: string };
+    body: string | { copy1: string; copy2?: string };
     image: string;
 };
 
@@ -26,9 +26,11 @@ export default function ProjectHeader({ header, width, height }: { header: Heade
                                 <div className="flex flex-row items-start">
                                     <Dot className="mr-2" /> <Body>{item.body.copy1}</Body>
                                 </div>
-                                <div className="flex flex-row items-start">
-                                    <Dot className="mr-2" /> <Body>{item.body.copy2}</Body>
-                                </div>
+                                {item.body.copy2 && (
+                                    <div className="flex flex-row items-start">
+                                        <Dot className="mr-2" /> <Body>{item.body.copy2}</Body>
+                                    </div>
+                                )}
                             </div>
                         )}
                     </div>

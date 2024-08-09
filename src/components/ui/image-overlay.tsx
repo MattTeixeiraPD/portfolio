@@ -11,15 +11,22 @@ type ImageOverlayProps = {
 };
 
 export default function ImageOverlay({ src, alt, width, height }: ImageOverlayProps) {
-    const { isOpen, setIsOpen } = useImageOverlay();
+    const { isOpen, setIsOpen, currentImage, setCurrentImage } = useImageOverlay();
 
-    const handleOpen = () => setIsOpen(true);
-    const handleClose = () => setIsOpen(false);
+    const handleOpen = () => {
+        setIsOpen(true);
+        setCurrentImage(src);
+    };
+
+    const handleClose = () => {
+        setIsOpen(false);
+        setCurrentImage(null);
+    };
 
     useEffect(() => {
         const handleKeyDown = (event: KeyboardEvent) => {
             if (event.key === 'Escape') {
-                setIsOpen(false);
+                handleClose();
             }
         };
 
@@ -39,11 +46,11 @@ export default function ImageOverlay({ src, alt, width, height }: ImageOverlayPr
     return (
         <>
             <Image src={src} alt={alt} width={width} height={height} onClick={handleOpen} className="cursor-pointer" />
-            {isOpen && (
+            {isOpen && currentImage === src && (
                 <div className="fixed inset-0 flex items-center justify-center bg-zinc-800 min-h-screen min-w-screen transition-opacity duration-1000 ease-in-out opacity-100 z-50" onClick={handleClose}>
                     <div style={{ position: "relative", width: "100vw", height: "100vh", margin: "40px" }}>
                         <Image
-                            src={src}
+                            src={currentImage}
                             alt={alt}
                             fill
                             sizes="100vw"

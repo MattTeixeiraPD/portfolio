@@ -17,8 +17,8 @@ import { useImageOverlay } from "@/context/ImageOverlayContext";
 const components: { title: string; href: string; description: string }[] = [
     {
         title: "Digital Vault",
-        href: "/project/vault",
-        description: "30% WAU/MAU achieved in 4 weeks and exceeded acquisition OKR by 100%",
+        href: "/project/digital-vault",
+        description: "30% WAU/MAU achieved in 4 weeks and exceeded acquisition OKR by nearly 200%",
     },
     {
         title: "Partnerships Dashboard",

@@ -14,7 +14,7 @@ const projects = [
         valueProp2: "30% WAU/MAU achieved in 4 weeks and exceeded acquisition OKR by 100%",
         image: "/the-vault/new/cover-page.png",
         tags: ["End-to-End", "MVP", "Startup", "Product & Design"],
-        href: "/project/vault",
+        href: "/project/digital-vault",
         id: "vault"
     },
     {

@@ -24,7 +24,7 @@ const vault = {
     impact: {
         one: "Went from concept to release in 45 days. This was an extremely hard project that required a lot of effort to understand how to solve the user's problems and to validate our value hypothesis.",
         two: "Translating user interviews and data analysis into defined problems and brainstormed several different solutions.",
-        three: "Achieved 200% of the quarter's OKR and displayed great early engagement metrics.",
+        three: "Achieved 170% of the quarter's OKR and displayed great early engagement metrics.",
     },
     strategicVision: {
         sectionHeading: "Strategic Vision",
@@ -36,10 +36,10 @@ const vault = {
         title: "People are not prepared for the end of their life, and only a Will isn't enough anymore.",
         body1: "When a person passes away, their Executor:",
         image: {
-            light: "/the-vault/executor.png",
-            dark: "/the-vault/executor.png"
+            light: "/the-vault/executor-light.png",
+            dark: "/the-vault/executor-dark.png"
         },
-        body2: "Not only dealing with someone’s death and matters is quite exhausting, but very often, the Executor is grieving while doing it. That is an extreme load on anyone."
+        body2: "Not only dealing with someone's death and matters is quite exhausting, but very often, the Executor is grieving while doing it. That is an extreme load on anyone."
     },
     solution: {
         sectionHeading: "Solution",

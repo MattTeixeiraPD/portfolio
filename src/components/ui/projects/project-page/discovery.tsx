@@ -10,6 +10,7 @@ type Props = {
     sectionHeading?: string;
     title?: string;
     subTitle?: string;
+    image?: string;
     subSubTitle1?: {
         title?: string,
         goals?: string[],
@@ -54,7 +55,7 @@ type Props = {
     }
 }
 
-function Discovery({ sectionHeading, title, subTitle, subSubTitle1, subSubTitle2, subTitle2, findings }: Props) {
+function Discovery({ sectionHeading, title, subTitle, subSubTitle1, subSubTitle2, subTitle2, findings, image }: Props) {
     return (
         <div className="flex flex-row gap-8 p-20" id="discovery">
             {sectionHeading && <SectionHeading>{sectionHeading}</SectionHeading>}
@@ -130,6 +131,9 @@ function Discovery({ sectionHeading, title, subTitle, subSubTitle1, subSubTitle2
                     </div>
                 )}
                 <Gap1REM />
+                {image && (
+                    <ImageOverlay src={image} alt={title || ''} width={800} height={400} />
+                )}
                 {findings && (
                     <div className="flex flex-col gap-4 items-start w-full">
                         <p className="text-2xl font-bold">{findings.title}</p>
@@ -139,21 +143,30 @@ function Discovery({ sectionHeading, title, subTitle, subSubTitle1, subSubTitle2
                             <>
                                 <div className="hidden dark:block">
                                     {findings.image1?.dark?.map((image, index) => (
-                                        <ImageOverlay key={index} src={image} alt={findings.title || ''} width={800} height={400} />
+                                        <ImageOverlay key={index} src={image} alt={findings.title || ''} width={500} height={400} />
                                     ))}
                                 </div>
                                 <div className="block dark:hidden">
                                     {findings.image1?.light?.map((image, index) => (
-                                        <ImageOverlay key={index} src={image} alt={findings.title || ''} width={800} height={400} />
+                                        <ImageOverlay key={index} src={image} alt={findings.title || ''} width={500} height={400} />
                                     ))}
                                 </div>
                             </>
                         )}
                         {findings.image2 && (
                             <>
-                                <div className="hidden dark:block">
+                                <div>
                                     {findings.image2?.dark?.map((image, index) => (
-                                        <ImageOverlay key={index} src={image} alt={findings.title || ''} width={800} height={400} />
+                                        <ImageOverlay key={index} src={image} alt={findings.title || ''} width={500} height={400} />
+                                    ))}
+                                </div>
+                            </>
+                        )}
+                        {findings.image3 && (
+                            <>
+                                <div>
+                                    {findings.image3?.dark?.map((image, index) => (
+                                        <ImageOverlay key={index} src={image} alt={findings.title || ''} width={500} height={400} />
                                     ))}
                                 </div>
                             </>

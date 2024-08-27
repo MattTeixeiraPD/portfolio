@@ -6,6 +6,7 @@ import { NavigationMenuDemo } from "@/components/ui/navbar/navbar";
 import Footer from "@/components/ui/footer.tsx/footer";
 import { Analytics } from "@vercel/analytics/react"
 import { ImageOverlayProvider } from "@/context/ImageOverlayContext";
+import MobileNotice from "@/components/ui/mobile-notice";
 
 const font = Assistant({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
@@ -23,16 +24,21 @@ export default function RootLayout({
       <body className={`${font.className} dark:bg-zinc-950 bg-zinc-50 font-normal min-w-screen min-h-screen max-w-screen px-10`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <ImageOverlayProvider>
-            <NavigationMenuDemo />
-          </ImageOverlayProvider>
-          {children}
-          <Footer />
-          <Analytics />
+          <div className="min-h-full min-w-full hidden md:block">
+            <ImageOverlayProvider>
+              <NavigationMenuDemo />
+            </ImageOverlayProvider>
+            {children}
+            <Footer />
+            <Analytics />
+          </div>
+          <div className="min-h-screen min-w-screen flex items-center justify-center md:hidden">
+            <MobileNotice />
+          </div>
         </ThemeProvider>
       </body>
     </html >

@@ -3,12 +3,12 @@ const vault = {
         {
             heading: "Duration",
             body: "Jul - Aug /2022",
-            image: '/the-vault/cover-page-1.png'
+            image: '/the-vault/cover-page-1.svg'
         },
         {
             heading: "Responsibilities",
             body: "Discovery, Definition of the Problem, Ideation, Wireframes, and Hi-fi Design.",
-            image: '/the-vault/cover-page-2.png'
+            image: '/the-vault/cover-page-2.svg'
         },
         {
             heading: "Results",
@@ -18,7 +18,7 @@ const vault = {
                 copy2: " 30% average WAU/MAU achieved in 4 weeks",
                 copy3: "Prototype and early testing results have helped Safewill secure funding",
             },
-            image: '/the-vault/cover-page-3.png'
+            image: '/the-vault/cover-page-3.svg'
         },
     ],
     impact: {
@@ -29,7 +29,7 @@ const vault = {
     strategicVision: {
         sectionHeading: "Strategic Vision",
         title: "Become the single digital platform that the world turns to for everything End-of-Life.",
-        image: "/the-vault/sw-logo.png"
+        image: "/the-vault/sw-logo.svg"
     },
     problem: {
         sectionHeading: "Problem",
@@ -47,12 +47,12 @@ const vault = {
         solution1: {
             heading: "Add in your most important information",
             body: "The Vault enables users add in their most important matters for their Executor, a vital step for when they need to sort our one's Estate.",
-            image: "/the-vault/new/solution-1.png"
+            image: "/the-vault/solution-1.svg"
         },
         solution2: {
             heading: "Guiding the user for a smoother handover",
             body: "The Vault guides the user regarding which documents should be uploaded so that they're aware of what is important for their Executor.",
-            image: "/the-vault/new/soution-2.png"
+            image: "/the-vault/solution-2.svg"
         }
     },
     discovery: {
@@ -90,7 +90,21 @@ const vault = {
         image1: "/the-vault/try-desktop-2.png",
         body2: "We tried many different designs with the intention of understanding how to optimally guide the user throughout their journey.",
         image2: "/the-vault/try-desktop.png",
-        body3: "Besides smaller feedback here and there, stakeholders were happy with insights and how they influenced our designs. We could move forward to prototyping in high-fidelity and test our designs."
+        body3: "Besides smaller feedback here and there, stakeholders were happy with insights and how they influenced our designs. We could move forward to prototyping in high-fidelity and test our designs.",
+        explorationImages: [
+            {
+                image: "/the-vault/design-exploration-1.svg",
+            },
+            {
+                image: "/the-vault/design-exploration-2.svg",
+            },
+            {
+                image: "/the-vault/design-exploration-3.svg",
+            },
+            {
+                image: "/the-vault/design-exploration-4.svg",
+            }
+        ]
     },
     constraints: {
         sectionHeading: "Constraints",
@@ -102,7 +116,7 @@ const vault = {
     highFidelity: {
         sectionHeading: "High-Fidelity Design",
         title: "After trying different layouts and journeys, we tried to go as simple as possible due to time constraints",
-        image: "/the-vault/new/hi-fi.png"
+        image: "/the-vault/hi-fi.svg"
     },
     usabiliyTest: {
         sectionHeading: "Usability Test",
@@ -117,7 +131,7 @@ const vault = {
     },
     learnings: {
         sectionHeading: "Learnings",
-        title: "What I learning on this initiative",
+        title: "What I learned on this initiative",
         array: {
             learning1: {
                 title: "1. Don't only share designs with stakeholders",

@@ -16,6 +16,11 @@ import { useImageOverlay } from "@/context/ImageOverlayContext";
 
 const components: { title: string; href: string; description: string }[] = [
     {
+        title: "CapitalClimb",
+        href: "/project/capitalclimb",
+        description: "20% DAU/MAU achieved within 30 days",
+    },
+    {
         title: "Digital Vault",
         href: "/project/digital-vault",
         description: "30% WAU/MAU achieved in 4 weeks and exceeded acquisition OKR by nearly 200%",

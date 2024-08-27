@@ -42,7 +42,7 @@ const ProjectCard = ({ projectName, valueProp1, valueProp2, image, tags, href }:
             >
             <Link href={href} className="w-full h-full px-20">
                 <div
-                    className="bg-zinc-100 dark:bg-zinc-700 w-full rounded-3xl border border-zinc-200 dark:border-zinc-600 flex flex-col lg:flex-row gap-10 md:gap-5 justify-between transition-transform duration-300 shadow-lg shadow-zinc-800/10 dark:shadow-zinc-200/20 dark:hover:shadow-2xl hover:scale-105 h-full"
+                    className="bg-zinc-100 dark:bg-zinc-700 w-full rounded-3xl border border-zinc-200 dark:border-zinc-600 flex flex-col lg:flex-row gap-10 md:gap-5 justify-between transition-transform duration-300 shadow-lg shadow-zinc-800/10 dark:shadow-zinc-200/20 dark:hover:shadow-2xl hover:scale-105 h-full overflow-hidden"
                 >
                     <CoverImage src={image} width={1200} height={630} title={projectName} />
                     <div className="flex flex-col gap-16 md:justify-between items-start p-4 md:py-8 md:pr-8 w-full">

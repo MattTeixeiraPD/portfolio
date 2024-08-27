@@ -7,6 +7,7 @@ import Footer from "@/components/ui/footer.tsx/footer";
 import BackToTop from "@/components/ui/back-to-top";
 import { Analytics } from "@vercel/analytics/react"
 import { ImageOverlayProvider } from "@/context/ImageOverlayContext";
+import MobileNotice from "@/components/ui/mobile-notice";
 
 const font = Assistant({ subsets: ["latin"] });
 
@@ -24,17 +25,22 @@ export default function RootLayout({
       <body className={`${font.className} dark:bg-zinc-950 bg-zinc-50 font-normal min-w-screen min-h-screen max-w-screen px-10`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <ImageOverlayProvider>
-            <NavigationMenuDemo />
-            {children}
-            <BackToTop />
-            <Footer />
-            <Analytics />
-          </ImageOverlayProvider>
+          <div className="min-h-full min-w-full">
+            <ImageOverlayProvider>
+              <NavigationMenuDemo />
+              {children}
+              <BackToTop />
+              <Footer />
+              <Analytics />
+            </ImageOverlayProvider>
+          </div>
+          <div className="min-h-screen min-w-screen flex items-center justify-center md:hidden">
+            <MobileNotice />
+          </div>
         </ThemeProvider>
       </body>
     </html >

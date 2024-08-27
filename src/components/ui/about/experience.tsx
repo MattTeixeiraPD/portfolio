@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const experience = [
     {
-        title: "User Experience Designer",
+        title: "Product Designer",
         company: "News Corp",
         date: "Aug/2023 - Present",
         link: "https://www.linkedin.com/company/news-corp-australia",

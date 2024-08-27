@@ -43,7 +43,7 @@ export default function CapitalClimbProject() {
 
     return (
         <section className="min-w-full min-h-screen flex flex-col items-center justify-center gap-16 rounded-[100px] bg-zinc-200 dark:bg-zinc-800 pb-12">
-            <ProjectHeader header={capitalClimbProduct.header} width={200} height={400} />
+            <ProjectHeader header={capitalClimbProduct.header} width={250} height={400} />
             <ImpactComponent copy={Object.values(capitalClimbProduct.impact)} />
             {
                 isProduct ? (

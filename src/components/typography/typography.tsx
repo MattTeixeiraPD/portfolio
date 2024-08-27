@@ -10,8 +10,12 @@ const Title = ({ children }: { children: React.ReactNode }) => {
     return <h2 className="text-4xl font-bold">{children}</h2>;
 };
 
-const Body = ({ children, className }: { children: React.ReactNode, className?: string }) => {
-    return <p className={`text-[20px] font-normal leading-loose ${className}`}>{children}</p>;
+const Subtitle = ({ children, className }: { children: React.ReactNode, className?: string }) => {
+    return <p className={`text-2xl font-bold leading-loose ${className}`}>{children}</p>;
 };
 
-export { ImpactHeading, SectionHeading, Title, Body };
+const Body = ({ children, className }: { children: React.ReactNode, className?: string }) => {
+    return <p className={`text-[18px] font-normal leading-loose ${className}`}>{children}</p>;
+};
+
+export { ImpactHeading, SectionHeading, Title, Subtitle, Body };

@@ -14,6 +14,14 @@ import IdeatingSolutions from "@/components/ui/projects/project-page/ideating-so
 import Constraints from "@/components/ui/projects/project-page/constraints";
 import { NavigationProvider } from "@/context/NavigationContext";
 import NavigateButton from "@/hooks/useNavigation";
+import { SectionHeading } from "@/components/typography/typography";
+import { Title, Body, Subtitle } from "@/components/typography/typography";
+import ImageOverlay from "@/components/ui/image-overlay";
+import SectionWrapper from "@/components/ui/projects/project-page/section-header";
+import { Gap1REM, Gap2REM } from "@/components/ui/spacing";
+import HalfREMWrapper from "@/components/ui/projects/project-page/half-rem-wrapper";
+import OneREMWrapper from "@/components/ui/projects/project-page/one-rem-wrapper";
+import Wrapper from "@/components/ui/projects/project-page/wrapper";
 
 export const metadata: Metadata = {
     title: "Digital Vault | Projects | Matt Teixeira",
@@ -32,6 +40,7 @@ export default function VaultPage() {
         { id: "ideating-solutions", name: "Ideating Solutions" },
         { id: "constraints", name: "Constraints" },
         { id: "high-fidelity", name: "High Fidelity" },
+        { id: "usability-test", name: "Usability Test" },
         { id: "learnings", name: "Learnings" },
         { id: "next-steps", name: "Next Steps" },
     ];
@@ -39,8 +48,8 @@ export default function VaultPage() {
     return (
         <NavigationProvider>
             <section className="min-w-full min-h-screen flex flex-col items-center justify-center gap-16 rounded-[100px] bg-zinc-200 dark:bg-zinc-800 pb-12">
-            <NavigateButton ids={ids} />
-                <ProjectHeader header={header} width={400} height={400} />
+                <NavigateButton ids={ids} />
+                <ProjectHeader header={header} width={250} height={200} />
                 <ImpactComponent copy={Object.values(vault.impact)} />
                 <StrategicVisionComponent
                     sectionHeading={vault.strategicVision.sectionHeading}
@@ -80,6 +89,7 @@ export default function VaultPage() {
                     body2={vault.ideatingSolutions.body2}
                     image2={vault.ideatingSolutions.image2}
                     body3={vault.ideatingSolutions.body3}
+                    explorationImages={vault.ideatingSolutions.explorationImages}
                 />
                 <Divider />
                 <Constraints
@@ -95,6 +105,28 @@ export default function VaultPage() {
                     title={vault.highFidelity.title}
                     image={vault.highFidelity.image}
                 />
+                <Divider />
+                <SectionWrapper id="usability-test">
+                    <SectionHeading>{vault.usabiliyTest.sectionHeading}</SectionHeading>
+                    <Wrapper>
+                        <OneREMWrapper>
+                            <Title>{vault.usabiliyTest.title}</Title>
+                            <Gap1REM />
+                            <Body>{vault.usabiliyTest.body1}</Body>
+                            <HalfREMWrapper>
+                                <ImageOverlay src={vault.usabiliyTest.image1} alt="Problem Statement" width={500} height={400} />
+                                <ImageOverlay src={vault.usabiliyTest.image2} alt="Problem Statement" width={500} height={400} />
+                            </HalfREMWrapper>
+                        </OneREMWrapper>
+                        <Gap2REM />
+                        <Subtitle>{vault.usabiliyTest.results}</Subtitle>
+                        <OneREMWrapper>
+                            <ImageOverlay src={vault.usabiliyTest.resultImage1} alt="Problem Statement" width={500} height={400} />
+                            <ImageOverlay src={vault.usabiliyTest.resultImage2} alt="Problem Statement" width={500} height={400} />
+                            <ImageOverlay src={vault.usabiliyTest.resultImage3} alt="Problem Statement" width={500} height={400} />
+                        </OneREMWrapper>
+                    </Wrapper>
+                </SectionWrapper>
                 <Divider />
                 <Learnings
                     sectionHeading={vault.learnings.sectionHeading}

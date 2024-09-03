@@ -29,7 +29,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="min-h-full min-w-full">
+          <div className="min-h-full min-w-full hidden md:block">
             <ImageOverlayProvider>
               <NavigationMenuDemo />
             </ImageOverlayProvider>

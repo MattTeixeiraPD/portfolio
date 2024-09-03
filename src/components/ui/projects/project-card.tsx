@@ -38,7 +38,7 @@ const ProjectCard = ({ projectName, valueProp1, valueProp2, image, tags, href }:
             initial={{ scale: 0.1 }}
             animate={controls}
             transition={{ duration: 0.2 }}
-            className="w-full h-full md:h-[500px]"
+            className="w-full h-full md:h-fit"
             >
             <Link href={href} className="w-full h-full px-20">
                 <div

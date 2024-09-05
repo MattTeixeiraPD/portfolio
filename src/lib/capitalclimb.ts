@@ -109,6 +109,9 @@ export const capitalClimbProduct = {
         image: "/capitalclimb/exploration-1.svg",
         image2: "/capitalclimb/exploration-2.svg"
     },
+    finalProduct: {
+        image: "/capitalclimb/hi-fi.svg"
+    },
     learnings: {
         sectionHeading: "Learnings",
         title: "What I learned on this initiative",

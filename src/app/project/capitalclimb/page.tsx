@@ -15,6 +15,7 @@ import Learnings from "@/components/ui/projects/project-page/learnings";
 import NextSteps from "@/components/ui/projects/project-page/next-steps";
 import { Title } from "@/components/typography/typography";
 import Link from "next/link";
+import ImageOverlay from "@/components/ui/image-overlay";
 
 export default function CapitalClimbProject() {
     const [isProduct, setIsProduct] = useState<boolean>(true);
@@ -100,6 +101,7 @@ export default function CapitalClimbProject() {
                             <div className="flex flex-col gap-8">
                                 <Title>Final Product</Title>
                                 <Body>The final product can be found at <Link href="https://capitalclimb.app/en" target="_blank" className="underline">capitalclimb.app/en</Link>. I'm frequently working on it.</Body>
+                                <ImageOverlay src={capitalClimbProduct.finalProduct.image} alt="Final Product" width={1000} height={1000} />
                             </div>
                         </div>
                         <Divider />

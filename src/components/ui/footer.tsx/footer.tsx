@@ -14,7 +14,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-row items-center gap-2">
                 <Link href="https://www.linkedin.com/in/matt-teixeira/" target="_blank"><FaLinkedin className="text-gray-500 dark:text-gray-500" /></Link>
-                <Link href="https://github.com/" target="_blank"><FaGithub className="text-gray-500 dark:text-gray-500" /></Link>
+                <Link href="https://github.com/mattTeixeiraProduct" target="_blank"><FaGithub className="text-gray-500 dark:text-gray-500" /></Link>
                 <Link href="mailto:moliiveira@hotmail.com" target="_blank"><MdEmail className="text-gray-500 dark:text-gray-500" /></Link>
                 <Link href="https://medium.com/@Matt.TeixeiraPD" target="_blank"><BsMedium className="text-gray-500 dark:text-gray-500" /></Link>
             </div>

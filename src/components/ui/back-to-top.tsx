@@ -1,5 +1,5 @@
 'use client'
-import { IconButton } from "./button"
+import { IconButton } from "./primitives/button"
 import { ArrowUp } from "lucide-react"
 import Link from "next/link"
 

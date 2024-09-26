@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 17876 8213" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1.85185,0,0,1.85185,-74.3721,-117524)">
+        <g id="Information-Architecture---Dark" serif:id="Information Architecture - Dark" transform="matrix(0.82062,0,0,0.471457,-105.089,35918.6)">
+            <rect x="177" y="58424" width="11763" height="9407" style="fill:none;"/>
+            <g transform="matrix(1.21859,0,0,2.12108,128.06,-63389.3)">
+                <path d="M2119.36,58056L2119.36,58324C2119.36,58398 2059.32,58458 1985.36,58458L509,58458C435.043,58458 375,58398 375,58324L375,58056C375,57982 435.043,57922 509,57922L1985.36,57922C2059.32,57922 2119.36,57982 2119.36,58056Z" style="fill:rgb(38,63,68);"/>
+            </g>
+            <g transform="matrix(1.21859,0,0,2.12108,3176.31,-63389.3)">
+                <path d="M2119.36,58056L2119.36,58324C2119.36,58398 2059.32,58458 1985.36,58458L509,58458C435.043,58458 375,58398 375,58324L375,58056C375,57982 435.043,57922 509,57922L1985.36,57922C2059.32,57922 2119.36,57982 2119.36,58056Z" style="fill:rgb(103,215,192);"/>
+            </g>
+            <g transform="matrix(1.21859,0,0,2.12108,6457.42,-63386.7)">
+                <path d="M2119.36,58056L2119.36,58324C2119.36,58398 2059.32,58458 1985.36,58458L509,58458C435.043,58458 375,58398 375,58324L375,58056C375,57982 435.043,57922 509,57922L1985.36,57922C2059.32,57922 2119.36,57982 2119.36,58056Z" style="fill:rgb(204,246,232);"/>
+            </g>
+            <g transform="matrix(1.21859,0,0,2.12108,411.113,-63266.8)">
+                <g transform="matrix(1.00611,0,0,1,-3.87255,0)">
+                    <g transform="matrix(144,0,0,144,1383.67,58167.3)">
+                    </g>
+                    <text x="633.29px" y="58167.3px" style="font-family:'Larsseit-Bold', 'Larsseit';font-weight:700;font-size:144px;fill:white;">L<tspan x="707.018px 761.018px 787.946px 892.634px 965.498px 1018.63px 1097.69px 1171.85px 1256.52px 1308.65px " y="58167.3px 58167.3px 58167.3px 58167.3px 58167.3px 58167.3px 58167.3px 58167.3px 58167.3px 58167.3px ">1 Category</tspan></text>
+                </g>
+            </g>
+            <g transform="matrix(1.21859,0,0,2.12108,3449.48,-63670.9)">
+                <g transform="matrix(1.00611,0,0,1,-3.87255,0)">
+                    <g transform="matrix(144,0,0,144,1399.8,58359.1)">
+                    </g>
+                    <text x="633.29px" y="58359.1px" style="font-family:'Larsseit-Bold', 'Larsseit';font-weight:700;font-size:144px;fill:white;">L<tspan x="707.018px 777.146px 804.074px 908.762px 981.626px 1034.76px 1113.82px 1187.98px 1272.65px 1324.77px " y="58359.1px 58359.1px 58359.1px 58359.1px 58359.1px 58359.1px 58359.1px 58359.1px 58359.1px 58359.1px ">2 Category</tspan></text>
+                </g>
+            </g>
+            <g transform="matrix(1.21859,0,0,2.12108,6726.26,-63670.9)">
+                <g transform="matrix(1.00611,0,0,1,-3.87255,0)">
+                    <g transform="matrix(144,0,0,144,1406.85,58359.1)">
+                    </g>
+                    <text x="633.29px" y="58359.1px" style="font-family:'Larsseit-Bold', 'Larsseit';font-weight:700;font-size:144px;">L<tspan x="707.018px 784.202px 811.13px 915.818px 988.682px 1041.82px 1120.87px 1195.03px 1279.7px 1331.83px " y="58359.1px 58359.1px 58359.1px 58359.1px 58359.1px 58359.1px 58359.1px 58359.1px 58359.1px 58359.1px ">3 Category</tspan></text>
+                </g>
+            </g>
+            <g transform="matrix(1.21859,0,0,2.12108,9371.57,-63640)">
+                <g transform="matrix(1.00611,0,0,1,-3.87255,0)">
+                    <g transform="matrix(144,0,0,144,925.034,58359.1)">
+                    </g>
+                    <text x="633.29px" y="58359.1px" style="font-family:'Larsseit-Bold', 'Larsseit';font-weight:700;font-size:144px;fill:white;stroke:white;stroke-width:1px;">I<tspan x="672.026px 725.162px 804.218px " y="58359.1px 58359.1px 58359.1px ">tem</tspan></text>
+                </g>
+            </g>
+            <g transform="matrix(1.21859,0,0,2.12108,181.678,-64211.4)">
+                <path d="M2146,58590.4L2146,58567.2L2728.81,58567.2L2728.81,58545.6L2762,58578.8L2728.81,58612L2728.81,58590.4L2146,58590.4Z" style="fill:rgb(73,29,166);"/>
+            </g>
+            <g transform="matrix(1.21859,0,0,2.12108,3330.47,-64211.4)">
+                <path d="M2146,58590.4L2146,58567.2L2728.81,58567.2L2728.81,58545.6L2762,58578.8L2728.81,58612L2728.81,58590.4L2146,58590.4Z" style="fill:rgb(73,29,166);"/>
+            </g>
+            <g transform="matrix(1.21859,0,0,2.12108,6564.55,-64211.4)">
+                <path d="M2146,58590.4L2146,58567.2L2728.81,58567.2L2728.81,58545.6L2762,58578.8L2728.81,58612L2728.81,58590.4L2146,58590.4Z" style="fill:rgb(73,29,166);"/>
+            </g>
+            <g transform="matrix(1.21206,-0.219256,0.125966,2.10972,-8089.8,-62902.9)">
+                <g transform="matrix(144,0,0,144,4359.72,59716.5)">
+                </g>
+                <text x="1462.3px" y="59716.5px" style="font-family:'Larsseit-Light', 'Larsseit';font-weight:300;font-size:144px;fill:white;stroke:white;stroke-width:1px;">Which categ<tspan x="2239.47px 2321.98px " y="59716.5px 59716.5px ">or</tspan>ies should b<tspan x="3105.19px 3184.39px " y="59716.5px 59716.5px ">e </tspan>on the same pag<tspan x="4222.92px 4302.12px " y="59716.5px 59716.5px ">e?</tspan></text>
+            </g>
+            <g transform="matrix(1.18915,0.463463,-0.266266,2.06983,21812.7,-60495.6)">
+                <text x="1462.3px" y="59716.5px" style="font-family:'Larsseit-Light', 'Larsseit';font-weight:300;font-size:144px;fill:white;stroke:white;stroke-width:1px;">Let me tr<tspan x="2015.11px 2086.39px " y="59716.5px 59716.5px ">y </tspan>another dif<tspan x="2789.11px 2834.91px 2914.11px 2959.32px 3038.52px " y="59716.5px 59716.5px 59716.5px 59716.5px 59716.5px ">feren</tspan>t way to guide</text>
+                <g transform="matrix(144,0,0,144,3588.6,59918.8)">
+                </g>
+                <text x="1849.94px" y="59918.8px" style="font-family:'Larsseit-Light', 'Larsseit';font-weight:300;font-size:144px;fill:white;stroke:white;stroke-width:1px;">the user thr<tspan x="2545.03px 2627.55px " y="59918.8px 59918.8px ">ou</tspan>gh this journe<tspan x="3517.32px " y="59918.8px ">y</tspan></text>
+            </g>
+            <g transform="matrix(1.20527,0.312804,-0.17971,2.09789,10189,-61788.9)">
+                <g transform="matrix(144,0,0,144,5467.08,59716.5)">
+                </g>
+                <text x="1462.3px" y="59716.5px" style="font-family:'Larsseit-Light', 'Larsseit';font-weight:300;font-size:144px;fill:white;stroke:white;stroke-width:1px;">Ho<tspan x="1644.75px 1754.33px " y="59716.5px 59716.5px ">w </tspan>much guidance do w<tspan x="3060.84px 3140.04px " y="59716.5px 59716.5px ">e </tspan>ne<tspan x="3325.95px 3406.44px 3491.55px " y="59716.5px 59716.5px 59716.5px ">ed </tspan>without adding to<tspan x="4604.81px 4687.32px " y="59716.5px 59716.5px ">o </tspan>much cop<tspan x="5338.2px 5409.48px " y="59716.5px 59716.5px ">y?</tspan></text>
+            </g>
+            <g transform="matrix(1.21859,0,-3.33067e-16,2.12108,412.883,-60028.5)">
+                <g transform="matrix(192,0,0,192,4393.37,59716.5)">
+                </g>
+                <g transform="matrix(192,0,0,192,4461.23,59716.5)">
+                </g>
+                <g transform="matrix(192,0,0,192,8145.05,59716.5)">
+                </g>
+                <text x="1462.3px" y="59716.5px" style="font-family:'Larsseit-Bold', 'Larsseit';font-weight:700;font-size:192px;fill:white;stroke:white;stroke-width:1px;">Base<tspan x="1872.79px 1991.64px " y="59716.5px 59716.5px ">d </tspan>on the futur<tspan x="3033.24px 3140.57px " y="59716.5px 59716.5px ">e </tspan>vision, should ﬁelds b<tspan x="5037.53px 5144.86px " y="59716.5px 59716.5px ">e </tspan>in a dr<tspan x="5703px 5817.82px 5939.35px 6058.2px 6171.1px 6321.05px " y="59716.5px 59716.5px 59716.5px 59716.5px 59716.5px 59716.5px ">opdown</tspan> format or fr<tspan x="7451.16px 7559.64px 7666.97px " y="59716.5px 59716.5px 59716.5px ">ee </tspan>text?</text>
+            </g>
+            <g transform="matrix(1.20532,-0.312206,0.179367,2.09798,-6851.04,-62150.4)">
+                <text x="1462.3px" y="59716.5px" style="font-family:'Larsseit-Light', 'Larsseit';font-weight:300;font-size:144px;fill:white;stroke:white;stroke-width:1px;">Ar<tspan x="1604.71px 1683.91px 1714.3px 1822.44px 1901.64px " y="59716.5px 59716.5px 59716.5px 59716.5px 59716.5px ">e we </tspan>able to g<tspan x="2461.37px 2540.57px " y="59716.5px 59716.5px ">et</tspan> away with a mor<tspan x="3611.5px 3690.7px " y="59716.5px 59716.5px ">e </tspan>cloud-lik<tspan x="4259.5px 4338.7px " y="59716.5px 59716.5px ">e </tspan>way</text>
+                <g transform="matrix(144,0,0,144,4728.72,59918.8)">
+                </g>
+                <text x="1352.93px" y="59918.8px" style="font-family:'Larsseit-Light', 'Larsseit';font-weight:300;font-size:144px;fill:white;stroke:white;stroke-width:1px;">wher<tspan x="1661.95px 1741.15px " y="59918.8px 59918.8px ">e </tspan>the user is the b<tspan x="2744.69px 2823.89px " y="59918.8px 59918.8px ">es</tspan>t judg<tspan x="3229.25px 3308.45px " y="59918.8px 59918.8px ">e </tspan>of which items to add?</text>
+            </g>
+        </g>
+    </g>
+</svg>

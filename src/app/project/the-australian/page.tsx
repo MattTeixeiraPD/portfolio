@@ -28,7 +28,7 @@ export default function TheAustralianPage() {
     const header = theAustralian.header;
     return (
         <NavigationProvider>
-            <section className="min-w-full min-h-screen flex flex-col items-center justify-center gap-16 rounded-[100px] bg-zinc-200 dark:bg-zinc-800 pb-12">
+            <section className="min-w-full min-h-screen flex flex-col items-center justify-center gap-16 pb-12">
                 <NavigateButton ids={ids} />
                 <ProjectHeader header={header} width={250} height={400} />
                 <ImpactComponent copy={Object.values(theAustralian.impact)} />

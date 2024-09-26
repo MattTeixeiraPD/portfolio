@@ -1,6 +1,6 @@
 'use client';
 import { useNavigation } from "@/context/NavigationContext";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/primitives/button";
 import { useState, useEffect } from "react";
 import { ChevronRight, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";

@@ -39,18 +39,25 @@ const ProjectCard = ({ projectName, valueProp1, valueProp2, image, tags, href }:
             animate={controls}
             transition={{ duration: 0.2 }}
             className="w-full h-full md:h-fit"
-            >
+            id="projects"
+        >
             <Link href={href} className="w-full h-full px-20">
                 <div
-                    className="bg-zinc-100 dark:bg-zinc-700 w-full rounded-3xl border border-zinc-200 dark:border-zinc-600 flex flex-col lg:flex-row gap-10 md:gap-5 justify-between transition-transform duration-300 shadow-lg shadow-zinc-800/10 dark:shadow-zinc-200/20 dark:hover:shadow-2xl hover:scale-105 h-full overflow-hidden"
+                    className="bg-zinc-200 dark:bg-zinc-900 w-full rounded-3xl border border-zinc-300 dark:border-zinc-700 flex flex-col lg:flex-row gap-10 md:gap-5 justify-between transition-transform duration-300 shadow-lg shadow-zinc-800/10 dark:shadow-zinc-200/20 dark:hover:shadow-2xl hover:scale-105 h-full overflow-hidden"
                 >
                     <CoverImage src={image} width={1200} height={630} title={projectName} />
                     <div className="flex flex-col gap-16 md:justify-between items-start p-4 md:py-8 md:pr-8 w-full">
                         <div className="flex flex-col gap-12 w-full">
                             <h2 className="text-2xl md:text-4xl font-medium3 w-full">{projectName}</h2>
                             <div className="flex flex-col gap-4 w-full">
-                                <span className="flex items-center gap-2 text-gray-500 dark:text-gray-300 text-base md:text-lg"><Info className="mr-1 text-gray-500 dark:text-gray-300" />{valueProp1}</span>
-                                <span className="flex items-center gap-2 text-gray-500 dark:text-gray-300 text-base md:text-lg"><Goal className="mr-1 text-gray-500 dark:text-gray-300" />{valueProp2}</span>
+                                <span className="flex items-center gap-2 text-gray-500 dark:text-gray-300 text-base md:text-lg">
+                                    <Info size={24} className="mr-1 text-gray-500 dark:text-gray-300" />
+                                    {valueProp1}
+                                </span>
+                                <span className="flex items-center gap-2 text-gray-500 dark:text-gray-300 text-base md:text-lg">
+                                    <Goal size={24} className="mr-1 text-gray-500 dark:text-gray-300" />
+                                    {valueProp2}
+                                </span>
                             </div>
                         </div>
                         <div className="flex gap-2 flex-wrap w-full">
@@ -70,7 +77,7 @@ const ProjectCard = ({ projectName, valueProp1, valueProp2, image, tags, href }:
 
 const ProjectCardWrapper = () => {
     return (
-        <div className="flex flex-col gap-12 w-full items-center justify-center px-4 lg:px-20">
+        <div className="flex flex-col gap-4 w-full items-center justify-center px-4 lg:px-20">
             {projects.map((project) => (
                 <ProjectCard
                     {...project}
